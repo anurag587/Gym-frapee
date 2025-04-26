@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:title",
+ "creation": "2025-04-25 18:42:40.392219",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "routine_section",
+  "title",
+  "day",
+  "start_time",
+  "end_time",
+  "column_break_whqx",
+  "level",
+  "exercise_list",
+  "accuracy"
+ ],
+ "fields": [
+  {
+   "fieldname": "routine_section",
+   "fieldtype": "Section Break",
+   "label": "Routine"
+  },
+  {
+   "description": "Name of Routine",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Select",
+   "label": "Day",
+   "options": "Monday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time "
+  },
+  {
+   "fieldname": "column_break_whqx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "level",
+   "fieldtype": "Select",
+   "label": "Level",
+   "options": "Beginner\nIntermediate\nExpert"
+  },
+  {
+   "fieldname": "exercise_list",
+   "fieldtype": "Table",
+   "label": "Exercise List",
+   "options": "Routine Exercise"
+  },
+  {
+   "fieldname": "accuracy",
+   "fieldtype": "Float",
+   "label": "Accuracy"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-26 12:31:48.805656",
+ "modified_by": "Administrator",
+ "module": "gym",
+ "name": "Routine",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
