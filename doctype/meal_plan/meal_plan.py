@@ -5,19 +5,21 @@
 from frappe.model.document import Document
 
 
-class Diet(Document):
+class MealPlan(Document):
 	# begin: auto-generated types
 	# This code is auto-generated. Do not modify anything in this block.
 
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
-		from frappe.gym.doctype.meal_plan.meal_plan import MealPlan
 		from frappe.types import DF
 
-		date: DF.Date | None
-		diet_type: DF.Literal["Cutting", "Bulking", "Maintain"]
-		meal_type: DF.Table[MealPlan]
-		user: DF.Link | None
+		calories: DF.Data | None
+		food_items: DF.Data | None
+		meal_type: DF.Literal["Breakfast", "Lunch", "Snacks", "Dinner"]
+		parent: DF.Data
+		parentfield: DF.Data
+		parenttype: DF.Data
+		quantity: DF.Data | None
 	# end: auto-generated types
 	pass

@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-26 14:26:09.871726",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "meal_type",
+  "food_items",
+  "column_break_awdw",
+  "quantity",
+  "calories"
+ ],
+ "fields": [
+  {
+   "fieldname": "meal_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Meal Type ",
+   "options": "Breakfast\nLunch\nSnacks\nDinner"
+  },
+  {
+   "description": "Name of food",
+   "fieldname": "food_items",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Food Items "
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "calories",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Calories"
+  },
+  {
+   "fieldname": "column_break_awdw",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-26 14:40:41.025319",
+ "modified_by": "Administrator",
+ "module": "gym",
+ "name": "Meal Plan",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
